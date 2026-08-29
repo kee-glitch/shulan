@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "Alibaba PuHuiTi 3.0";
+  src: local("Alibaba PuHuiTi 3.0 55 Regular"),
+       local("Alibaba PuHuiTi 3.0"),
+       url("./assets/fonts/AlibabaPuHuiTi-3-55-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
-  --font-family-ui: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-family-ui: "Alibaba PuHuiTi 3.0", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
   --font-size-display: 25px;
   --font-size-title-lg: 20px;
   --font-size-title-md: 17px;
