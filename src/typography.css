@@ -1,0 +1,271 @@
+:root {
+  --font-family-ui: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-size-display: 25px;
+  --font-size-title-lg: 20px;
+  --font-size-title-md: 17px;
+  --font-size-title-sm: 15px;
+  --font-size-body-lg: 15px;
+  --font-size-body-md: 13px;
+  --font-size-body-sm: 12px;
+  --font-size-label: 11px;
+  --font-size-caption: 10px;
+  --font-size-overline: 8px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --line-height-tight: 1.35;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+  --text-primary: #202132;
+  --text-secondary: #727787;
+  --text-tertiary: #969baa;
+  --text-brand: #6553da;
+  --text-accent: #ff4f79;
+  --text-success: #388553;
+  --text-danger: #c5405c;
+  --text-on-dark: #fff;
+}
+
+html, body, button, input, textarea {
+  font-family: var(--font-family-ui);
+}
+
+body {
+  color: var(--text-primary);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+.side-logo {
+  color: var(--text-on-dark);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1;
+}
+
+.side-nav nav button {
+  color: var(--text-secondary);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: 15px;
+}
+
+.side-nav nav button.active {
+  color: var(--text-brand);
+  font-weight: var(--font-weight-bold);
+}
+
+.top-location {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-body-md);
+  line-height: 21px;
+}
+
+.top-location strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.points {
+  color: var(--text-brand);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-bold);
+}
+
+.history-panel > header small {
+  color: var(--text-accent);
+  font-size: var(--font-size-overline);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 12px;
+  letter-spacing: .12em;
+}
+
+.history-panel > header strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-title-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: 22px;
+}
+
+.group {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-caption);
+  line-height: 15px;
+}
+
+.history span b {
+  color: var(--text-primary);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: 19px;
+}
+
+.history span small {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-caption);
+  line-height: 15px;
+}
+
+.welcome p {
+  color: var(--text-accent);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 16px;
+  letter-spacing: .08em;
+}
+
+.welcome h1 {
+  color: var(--text-primary);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-bold);
+  line-height: 34px;
+  letter-spacing: -.04em;
+}
+
+.welcome button,
+.tabs button,
+.param,
+.compose > footer button,
+.result > footer button,
+.failure button,
+.modal footer button {
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-semibold);
+}
+
+.tabs button {
+  color: var(--text-secondary);
+  line-height: 16px;
+}
+
+.tabs button.active {
+  color: var(--text-accent);
+}
+
+.compose textarea {
+  color: var(--text-primary);
+  font-size: var(--font-size-body-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: 25px;
+}
+
+.compose textarea::placeholder {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-body-lg);
+}
+
+.counter,
+.limits,
+.attachment small,
+.note,
+.result > header small,
+.result > header em,
+.loading p,
+.failure p {
+  font-size: var(--font-size-caption);
+  line-height: 15px;
+}
+
+.counter,
+.limits,
+.note,
+.result > header small,
+.loading p {
+  color: var(--text-tertiary);
+}
+
+.upload,
+.attachment strong {
+  font-size: var(--font-size-body-sm);
+  line-height: 19px;
+}
+
+.attachment strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+.attachment small {
+  color: var(--text-success);
+}
+
+.param span {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-label);
+}
+
+.param b {
+  color: var(--text-primary);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-semibold);
+}
+
+.submit {
+  color: var(--text-on-dark);
+  font-size: var(--font-size-label) !important;
+  font-weight: var(--font-weight-bold) !important;
+}
+
+.hint,
+.error {
+  color: var(--text-danger);
+  font-size: var(--font-size-label);
+  line-height: 16px;
+}
+
+.result > header strong,
+.loading b,
+.failure b {
+  color: var(--text-primary);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-semibold);
+  line-height: 21px;
+}
+
+.result > header em {
+  color: var(--text-success);
+}
+
+.text h2,
+.modal h2 {
+  color: var(--text-primary);
+  font-size: var(--font-size-title-md);
+  font-weight: var(--font-weight-bold);
+  line-height: 25px;
+}
+
+.text p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.75;
+}
+
+.result-prompt,
+.modal > p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-body-sm);
+  line-height: 1.6;
+}
+
+.toast {
+  color: var(--text-on-dark);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-semibold);
+  line-height: 16px;
+}
+
+.empty b {
+  color: var(--text-primary);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.empty p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-body-sm);
+  line-height: 19px;
+}

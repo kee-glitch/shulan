@@ -1,0 +1,128 @@
+.app > .top {
+  width: calc(100% - 68px);
+  margin-left: 68px;
+  padding: 0 18px;
+  z-index: 70;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.header-brand .side-logo {
+  flex: 0 0 38px;
+  margin: 0;
+}
+
+.side-nav {
+  inset: 0 auto 0 0;
+}
+
+.side-nav nav {
+  margin: auto 0;
+  padding: 0;
+  transform: translateY(-150px);
+}
+
+.history-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.history-panel > header,
+.history-panel > .search,
+.history-panel > .fixed-conversations {
+  flex: 0 0 auto;
+}
+
+.fixed-conversations {
+  display: grid;
+  gap: 6px;
+  padding: 8px 0 12px;
+}
+
+.fixed-conversations > button,
+.default-conversation {
+  min-height: 46px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 11px;
+  background: #f7f6ff;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  color: #202231;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fixed-conversations > button:hover,
+.default-conversation:hover {
+  background: #efedff;
+}
+
+.fixed-conversations > button svg,
+.default-conversation svg {
+  width: 18px;
+  height: 18px;
+  color: #6553da;
+  justify-self: center;
+}
+
+.fixed-conversations > button span,
+.default-conversation span {
+  min-width: 0;
+  display: grid;
+}
+
+.fixed-conversations > button b,
+.default-conversation b {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.fixed-conversations > button small,
+.default-conversation small {
+  color: #969baa;
+  font-size: 9px;
+  line-height: 14px;
+}
+
+.history-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 3px;
+  scrollbar-width: thin;
+  scrollbar-color: #b9bbc4 transparent;
+}
+
+.history-scroll > .group {
+  display: block;
+  margin: 12px 8px 8px;
+}
+
+.default-conversation {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.header-actions { display: flex; align-items: center; gap: 8px; }
+.shortcut-button { height: 34px; border: 1px solid #e2e3ea; background: #fff; border-radius: 10px; padding: 0 10px; display: flex; align-items: center; gap: 6px; color: #666b7b; font-size: 11px; font-weight: 600; }
+.shortcut-button svg { width: 16px; height: 16px; }
+.shortcut-modal { padding: 0; overflow: hidden; }
+.shortcut-modal > header { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px 14px; border-bottom: 1px solid #ececf1; }
+.shortcut-modal > header small { color: #ff4f79; font-size: 8px; font-weight: 800; letter-spacing: .12em; }
+.shortcut-modal > header h2 { margin: 3px 0 0; }
+.shortcut-modal > header button { width: 32px; height: 32px; border: 0; background: #f3f4f7; border-radius: 8px; display: grid; place-items: center; color: #777c8b; }
+.shortcut-list { padding: 8px 20px; }
+.shortcut-list > div { min-height: 46px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #f0f0f4; color: #404352; font-size: 12px; }
+.shortcut-list > div > span:last-child { display: flex; align-items: center; gap: 5px; }
+.shortcut-list kbd { min-width: 30px; height: 26px; padding: 0 7px; border: 1px solid #dfe0e8; border-bottom-width: 2px; background: #f8f8fb; border-radius: 6px; display: inline-grid; place-items: center; color: #585d6d; font-family: var(--font-family-ui); font-size: 10px; font-weight: 600; white-space: nowrap; }
+.shortcut-modal > p { margin: 0; padding: 12px 20px 16px; color: #969baa; font-size: 10px; }

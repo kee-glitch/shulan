@@ -1,0 +1,76 @@
+:root { --side-nav-width: 180px; --history-panel-width: 240px; }
+
+body { min-width: 1200px; }
+
+.side-nav {
+  width: var(--side-nav-width);
+  align-items: stretch;
+  padding: 14px 12px;
+}
+
+.side-brand {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 7px;
+  margin-bottom: 20px;
+}
+
+.side-brand .side-logo {
+  flex: 0 0 38px;
+  margin: 0;
+}
+
+.side-brand > span {
+  min-width: 0;
+  display: grid;
+  line-height: 1.2;
+}
+
+.side-brand strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-bold);
+}
+
+.side-brand small {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-caption);
+  line-height: 15px;
+}
+
+.side-nav nav { gap: 6px; }
+
+.side-nav nav button {
+  min-height: 44px;
+  padding: 0 12px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 11px;
+  font-size: var(--font-size-body-sm);
+  line-height: 19px;
+  border-radius: 10px;
+}
+
+.side-nav nav button svg {
+  flex: 0 0 19px;
+}
+
+.app > .top {
+  margin-left: var(--side-nav-width);
+  width: calc(100% - var(--side-nav-width));
+}
+
+.history-panel {
+  left: var(--side-nav-width);
+  width: var(--history-panel-width);
+}
+
+.app > main {
+  width: min(calc(100% - var(--side-nav-width) - var(--history-panel-width)), 760px);
+  margin-left: max(calc(var(--side-nav-width) + var(--history-panel-width)), calc((100% - 340px) / 2));
+  margin-right: 0;
+}
+
+.modal-layer { padding-left: calc(var(--side-nav-width) + var(--history-panel-width) + 20px); }

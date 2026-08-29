@@ -1,0 +1,109 @@
+/* Expanded navigation and history hierarchy */
+.side-brand strong {
+  color: #171928;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -.01em;
+}
+
+.side-brand small {
+  color: #9a9ead;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.side-nav nav button {
+  color: #63697a;
+  min-height: 60px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.side-nav nav button.active {
+  color: #5f4ed7;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.side-nav nav button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.top-location {
+  color: #a0a4b2;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.top-location strong {
+  color: #202231;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.history-panel > header small {
+  color: #ff4f79;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 13px;
+  letter-spacing: .14em;
+}
+
+.history-panel > header strong {
+  color: #171928;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -.02em;
+}
+
+.history-panel .search input {
+  color: #2e3140;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.history-panel .search input::placeholder {
+  color: #9296a5;
+}
+
+.history-panel .group {
+  color: #969baa;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.history-panel .history span b {
+  color: #202231;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 19px;
+  letter-spacing: -.01em;
+}
+
+.history-panel .history span small {
+  color: #969baa;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.history-panel .history > div.selected span b {
+  color: #171928;
+  font-weight: 700;
+}
+
+.history-panel .history > div.selected span small {
+  color: #7f8494;
+}
